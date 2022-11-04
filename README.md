@@ -1,4 +1,4 @@
-# trycohere
+# Use Cohere API for intent classification
 
 ```
 from cohere.classify import Example
@@ -21,4 +21,12 @@ response = co.classify(
 
 print(response.classifications)
 
+```
+
+Result: 
+
+```
+[Classification<prediction: "Solve Linear Equations", confidence: 0.9948228>, 
+Classification<prediction: "Addition", confidence: 0.9844185>, 
+Classification<prediction: "Subtraction", confidence: 0.96842146>]
 ```
